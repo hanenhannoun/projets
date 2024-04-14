@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:3rem;
+}
+.container >*{
+    min-width:25rem;
+    max-width: 40rem;
+}
+img{
+    flex:1 0;
+    object-fit: cover;
+    height:30rem;
+    margin:1rem;
+    border-radius: 3rem;
+}
+.details{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    flex:1 0;
+    border:3rem;
+    padding: 2rem;
+    color:black;
+    margin-left: 1rem;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+.name{
+    color:rgb(128, 7, 128);
+    font-size: 2.5rem;
+}
+.favorite{
+    font-size: 2rem;
+    color:red;
+
+     
+}
+.favorite.not{
+    color:gray;
+    font-size: 2rem;
+
+     
+}
+.origins{
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin:1rem 0;
+}
+.origins span{
+    padding:0.5rem;
+    font-size:1.2rem;
+    margin:0.5rem 0.5rem 0.5rem 0;
+    border-radius:2rem;
+    background-color: aliceblue;
+}
+.tags{
+    flex-wrap: wrap;
+    display: flex;
+}
+.tags a{
+  padding: 0.3rem 1rem;
+  margin:0.2rem 0.15rem;
+  border-radius:10rem;
+  background-color:antiquewhite;
+  font-weight: bold;  
+  color:rgb(122, 6, 26);
+}
+.cook-time{
+    margin-top: 1rem;
+}
+.cook-time span{
+    padding: 0.6rem 2rem 0.6rem 0;
+    border-radius: 10rem;
+    font-size: 1.3rem;
+}
+.price{
+    font-size:1.5rem;
+    margin:2rem 2rem 2rem 0;
+    color:green;
+
+}
+.price::before{
+    content:"Price:";
+    color:red;
+
+}
+button{
+    background-color: rgb(23, 158, 216);
+    color: black;
+    border:none;
+    font-size:1.2rem;
+    padding:1rem;
+    border-radius:10rem;
+    outline:none;
+}
+button:hover{
+    opacity:0.9;
+    cursor: pointer;
+
+}
